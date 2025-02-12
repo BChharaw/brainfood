@@ -1,0 +1,136 @@
+/* Base styles for the article content */
+.article-content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Light Mode Styles */
+.article-content.light-mode {
+  color: #222;
+}
+
+/* Dark Mode Styles */
+.article-content.dark-mode {
+  color: #e0e0e0;
+}
+
+/* Headings */
+.article-content h1, 
+.article-content h2, 
+.article-content h3 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.article-content.dark-mode h1,
+.article-content.dark-mode h2,
+.article-content.dark-mode h3 {
+  color: #ffffff;
+}
+
+/* Paragraphs */
+.article-content p {
+  margin-bottom: 15px;
+}
+
+/* Links */
+.article-content a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.article-content.dark-mode a {
+  color: #4ea8ff;
+}
+
+/* Tables */
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.article-content th, .article-content td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.article-content th {
+  background: #f7f7f7;
+  font-weight: bold;
+}
+
+/* Dark mode tables */
+.article-content.dark-mode table {
+  background: #252525;
+  border-color: #444;
+}
+
+.article-content.dark-mode th {
+  background: #333;
+  color: #f0f0f0;
+}
+
+.article-content.dark-mode td {
+  border-color: #444;
+}
+
+/* Charts */
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.article-content.dark-mode img {
+  filter: brightness(0.9);
+}
+
+/* Lists */
+.article-content ul, 
+.article-content ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.article-content li {
+  margin-bottom: 5px;
+}
+
+/* Blockquotes */
+.article-content blockquote {
+  border-left: 4px solid #0056b3;
+  padding-left: 15px;
+  font-style: italic;
+  color: #555;
+  margin: 15px 0;
+}
+
+.article-content.dark-mode blockquote {
+  border-left-color: #4ea8ff;
+  color: #cfcfcf;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .article-content {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .article-content img {
+    border-radius: 6px;
+  }
+}
